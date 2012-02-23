@@ -46,6 +46,38 @@
     </div>
     <img src="img/druplicon.png" alt="Druplicon" width="100%" height="100%" />
   </header>
+
+  <div id="twitter-block">
+    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 4,
+      interval: 30000,
+      width: '250',
+      height: 300,
+      theme: {
+        shell: {
+          background: '#a4dcff',
+          color: '#0072b9'
+        },
+        tweets: {
+          background: '#f2f2f2',
+          color: '#0072b9',
+          links: '#015a8d'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: true,
+        behavior: 'all'
+      }
+    }).render().setUser('DrupalCampCLT').start();
+    </script>
+  </div>
+
   <div id="content" role="main">
     <p>Hey there, welcome to the home of the inaugural DrupalCamp Charlotte. This camp is put on by the good folks at the <a href="http://chardug.org">Charlotte Drupal Users Group (CharDUG)</a>, a collection of enthusiastic individuals smitten with Drupal. Sunday, June 10, 2012 will feature a bevy of breakout sessions, birds of a feather (BoF) groups, and a keynote speech at the <a href="http://www.blakehotelnc.com/">Blake Hotel</a> in Charlotte's Uptown neighborhood. Our sessions and groups will have a little something for everyone, catering to everyone from beginning content editors to advanced developers.</p>
 
@@ -103,9 +135,12 @@
     <p><a href="mailto:sponsor@drupalcampcharlotte.com">Contact us</a> to purchase a Platinum, Gold, or Bronze Sponsorship.</p>
 
     </div>
+
     <footer>
       <div id="chardug-logo">
         <a href="http://chardug.org"><img src="img/chardugicon.png" alt="CharDUG logo" /></a>
+        <p><a href="https://twitter.com/DrupalCampCLT" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @DrupalCampCLT</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
         <p>The <a href="http://www.southeastlinuxfest.org/">SouthEast LinuxFest</a> has offered their resources to support this camp.</p>
       </div>
     </footer>
