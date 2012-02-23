@@ -380,6 +380,18 @@ footer {
   font-size: 18px;
 }
 
+#twitter-block {
+  clear: both;
+  float: right;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.twtr-ft {
+  background-color: #a4dcff;
+}
+
 /* iPhone [portrait + landscape] */
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
   body {
@@ -408,5 +420,9 @@ footer {
     padding-left: 8px;
     padding-right: 5px;
     margin: 0;
+  }
+
+  #twitter-block {
+    display: none;
   }
 }

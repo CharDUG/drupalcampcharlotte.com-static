@@ -33,19 +33,6 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <script type="text/javascript" src="js/ios-title.js"></script>
   <link rel="icon" type="image/png" href="favicon.ico" />
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29320735-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  </script>
 </head>
 <body>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -59,6 +46,38 @@
     </div>
     <img src="img/druplicon.png" alt="Druplicon" width="100%" height="100%" />
   </header>
+
+  <div id="twitter-block">
+    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 4,
+      interval: 30000,
+      width: '250',
+      height: 300,
+      theme: {
+        shell: {
+          background: '#a4dcff',
+          color: '#0072b9'
+        },
+        tweets: {
+          background: '#f2f2f2',
+          color: '#0072b9',
+          links: '#015a8d'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: true,
+        behavior: 'all'
+      }
+    }).render().setUser('DrupalCampCLT').start();
+    </script>
+  </div>
+
   <div id="content" role="main">
     <p>Hey there, welcome to the home of the inaugural DrupalCamp Charlotte. This camp is put on by the good folks at the <a href="http://chardug.org">Charlotte Drupal Users Group (CharDUG)</a>, a collection of enthusiastic individuals smitten with Drupal. Sunday, June 10, 2012 will feature a bevy of breakout sessions, birds of a feather (BoF) groups, and a keynote speech at the <a href="http://www.blakehotelnc.com/">Blake Hotel</a> in Charlotte's Uptown neighborhood. Our sessions and groups will have a little something for everyone, catering to everyone from beginning content editors to advanced developers.</p>
 
@@ -88,40 +107,43 @@
     <p><strong>(4) Gold sponsorship opportunities - $250</strong></p>
 
     <ul>
-    <li>Introduction before Keynote opening</li>
-    <li>6’ Sponsor table outside meeting rooms in main hallway</li>
-    <li>Callout on this website home page</li>
-    <li>Hyperlink to company website on DCCLT Sponsors page</li>
-    <li>Company name and logo projected onscreen during opening remarks</li>
-    <li>Official DCCLT Sponsor badge for company website/literature</li>
-    <li>Logo rotated on video screen in conference hallway</li>
-    <li>3 Complimentary attendee badges</li>
-    <li>3 Complimentary attendee t-shirts</li>
-    <li>Community goodwill &amp; support of Drupal</li>
-  </ul>
+      <li>Introduction before Keynote opening</li>
+      <li>6’ Sponsor table outside meeting rooms in main hallway</li>
+      <li>Callout on this website home page</li>
+      <li>Hyperlink to company website on DCCLT Sponsors page</li>
+      <li>Company name and logo projected onscreen during opening remarks</li>
+      <li>Official DCCLT Sponsor badge for company website/literature</li>
+      <li>Logo rotated on video screen in conference hallway</li>
+      <li>3 Complimentary attendee badges</li>
+      <li>3 Complimentary attendee t-shirts</li>
+      <li>Community goodwill &amp; support of Drupal</li>
+    </ul>
             
-  <p><strong>(5) Bronze sponsorship opportunities - $100</strong></p>
+    <p><strong>(5) Bronze sponsorship opportunities - $100</strong></p>
 
-  <ul>
-    <li>Callout on this website home page</li>
-    <li>Hyperlink to company website on DCCLT Sponsors page</li>
-    <li>Company name and logo projected onscreen during opening remarks</li>
-    <li>Official DCCLT Sponsor badge for company website/literature</li>
-    <li>Logo rotated on video screen in conference hallway</li>
-    <li>2 Complimentary attendee badges</li>
-    <li>2 Complimentary attendee t-shirts</li>
-    <li>Community goodwill &amp; support of Drupal</li>
-  </ul>
+    <ul>
+      <li>Callout on this website home page</li>
+      <li>Hyperlink to company website on DCCLT Sponsors page</li>
+      <li>Company name and logo projected onscreen during opening remarks</li>
+      <li>Official DCCLT Sponsor badge for company website/literature</li>
+      <li>Logo rotated on video screen in conference hallway</li>
+      <li>2 Complimentary attendee badges</li>
+      <li>2 Complimentary attendee t-shirts</li>
+      <li>Community goodwill &amp; support of Drupal</li>
+    </ul>
 
-  <p><a href="mailto:sponsor@drupalcampcharlotte.com">Contact us</a> to purchase a Platinum, Gold, or Bronze Sponsorship.</p>
+    <p><a href="mailto:sponsor@drupalcampcharlotte.com">Contact us</a> to purchase a Platinum, Gold, or Bronze Sponsorship.</p>
 
-  </div>
-  <footer>
-    <div id="chardug-logo">
-      <a href="http://chardug.org"><img src="img/chardugicon.png" alt="CharDUG logo" /></a>
-      <p>The <a href="http://www.southeastlinuxfest.org/">SouthEast LinuxFest</a> has offered their resources to support this camp.</p>
     </div>
-  </footer>
+
+    <footer>
+      <div id="chardug-logo">
+        <a href="http://chardug.org"><img src="img/chardugicon.png" alt="CharDUG logo" /></a>
+        <p><a href="https://twitter.com/DrupalCampCLT" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @DrupalCampCLT</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+        <p>The <a href="http://www.southeastlinuxfest.org/">SouthEast LinuxFest</a> has offered their resources to support this camp.</p>
+      </div>
+    </footer>
   </div>
 
   <!-- JavaScript at the bottom for fast page loading -->
@@ -138,7 +160,7 @@
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
   <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    var _gaq=[['_setAccount','UA-29320735-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
